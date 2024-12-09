@@ -108,29 +108,43 @@ button:hover {
 /* Page de services */
 .services {
     display: flex;
-    justify-content: space-around;
-    margin: 50px auto;
-    max-width: 900px;
     flex-wrap: wrap;
-        text-align: center;
-
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
 }
 
 .service-card {
-    background: #fff;
-    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
+    width: 300px; /* Taille par défaut pour les grands écrans */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 0 1 calc(30% - 20px);
-    margin: 10px;
-    transition: transform 0.3s;
-    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-card:hover {
-    transform: scale(1.05);
-    background: #f9f9f9;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Responsive pour les téléphones */
+@media (max-width: 600px) {
+    .service-card {
+        width: 90%; /* Prend presque toute la largeur de l'écran */
+    }
+
+    .services {
+        gap: 15px; /* Réduction de l'espace entre les cartes */
+    }
 }
 
 /* Page de profil */
