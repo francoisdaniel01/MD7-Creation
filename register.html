@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription | MD7 Creation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Créer un compte</h2>
+        <form onsubmit="registerUser(event)">
+            <input type="text" id="fullname" placeholder="Nom complet" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Mot de passe" required>
+            <button type="submit" class="btn">S'inscrire</button>
+        </form>
+    </div>
+</body>
+<script src="js/scripts.js"></script>
+</html>
