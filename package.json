@@ -1,0 +1,17 @@
+{
+    "name": "md7-creation",
+    "version": "1.0.0",
+    "description": "Mon projet MD7 Creation",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "mongoose": "^6.12.0",
+      "bcryptjs": "^2.4.3",
+      "jsonwebtoken": "^9.9.0",
+      "body-parser": "^1.20.2"
+    }
+  }
+  
